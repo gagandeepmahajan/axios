@@ -5,7 +5,7 @@ var properties = propertiesReader('config/env.properties');
 
 describe('get api request test reading properties file', async () => {
 
-    it.only('should return user list using properties file', async () => {
+    it('should return user list using properties file', async () => {
 
     const res = await axios.get(properties.get('baseuri') + '/users?page=2');
     console.log(res.data);
