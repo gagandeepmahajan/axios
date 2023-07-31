@@ -1,0 +1,5 @@
+https://reqres.in/api/users?page=2
+npx mocha .\api-test\get_request.js --timeout=30000
+npx mocha .\api-test\*.js --timeout=30000 --reporter mochawesome
+rimraf for folder deletion
+updated script folder under package.json to run multiple commands using && operator
